@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -10,11 +11,13 @@
     <style>
         body {
             background-color: #2D4B73;
+            color: #FFFFFF;
         }
 
         .banner {
             width: 100%;
-            height: auto;
+            height: 180px;
+            object-fit: cover;
         }
 
         .nav {
@@ -37,7 +40,7 @@
 
         .card {
             width: 30%;
-            height: 20%;
+            height: auto;
         }
 
         .cards {
@@ -49,12 +52,17 @@
             border: none;
             padding: 5px 50px;
         }
+
+        .table th,
+        .table td {
+            background-color: #B2BEBF;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="img/Frame 10.jpg" alt="Header avião" class="banner d-flex align-items-center" style="height: 180px;">
+        <img src="img/Frame 10.jpg" alt="Header avião" class="banner">
         <nav class="nav nav-fill flex-column flex-sm-row">
             <a class="nav-item nav-link active" href="index.html">Home</a>
             <a class="nav-item nav-link" href="pacotes.html">Pacotes de viagens</a>
@@ -62,10 +70,10 @@
         </nav>
     </header>
     <main class="m-3">
-        <div class="container-fluid parte1w-75 mx-auto">
+        <div class="container-fluid parte1 w-75 mx-auto">
             <div class="intro">
-                <h1 style="color: #FFFFFF;">Nossos Pacotes de Viagens</h1>
-                <p class="text-light">Desfrute de Destinos Incríveis com nossos Pacotes Personalizados</p>
+                <h1>Nossos Pacotes de Viagens</h1>
+                <p>Desfrute de Destinos Incríveis com nossos Pacotes Personalizados</p>
             </div>
         </div>
         <div class="cards m-5">
@@ -78,7 +86,7 @@
                         passeios guiados. Destinos ideais para garantir diversão e conforto para todos os membros da
                         família.</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary bg-warning" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary bg-warning text-dark" data-bs-toggle="modal"
                         data-bs-target="#family">
                         Saiba Mais!
                     </button>
@@ -103,9 +111,7 @@
                                     </ul>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +127,7 @@
                         atividades de aventura, e jantares especiais. Aproveite o tempo de qualidade juntos em destinos
                         incríveis.</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary bg-warning" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary bg-warning text-dark" data-bs-toggle="modal"
                         data-bs-target="#couple">
                         Saiba Mais!
                     </button>
@@ -133,8 +139,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Pacote Dupla</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     Ideal para casais ou amigos que querem compartilhar experiências. Este pacote
@@ -147,9 +152,7 @@
                                     </ul>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Understood</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +171,7 @@
                         viajantes. Explore novos destinos no seu ritmo.
                     </p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary bg-warning" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary bg-warning text-dark" data-bs-toggle="modal"
                         data-bs-target="#solo">
                         Saiba Mais!
                     </button>
@@ -179,8 +182,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Pacote Solo</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     Para quem adora viajar sozinho e explorar ao seu próprio ritmo. Inclui:
@@ -192,9 +194,7 @@
                                     </ul>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Understood</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                                 </div>
                             </div>
                         </div>
@@ -211,20 +211,19 @@
                         inesquecível.
                     </p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary bg-warning" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-primary bg-warning text-dark" data-bs-toggle="modal"
+                        data-bs-target="#luxo">
                         Saiba Mais!
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    <div class="modal fade" id="luxo" data-bs-backdrop="static" data-bs-keyboard="false"
                         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Pacote Luxo</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     Viaje com estilo e elegância! Este pacote oferece:
@@ -236,9 +235,7 @@
                                     </ul>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Understood</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                                 </div>
                             </div>
                         </div>
@@ -246,13 +243,51 @@
                 </div>
             </div>
         </div>
-        <div>
-
-        </div>
-        <div class="text-end">
-            <button type="button" class="btn botao rounded">
-                <a href="contato.html" class="text-decoration-none text-white">Faça o seu orçamento!</a>
-            </button>
+        <div class="container-fluid py-4 w-75 mx-auto">
+            <h2 class="mb-4">Comparação de Pacotes</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover border-white">
+                    <thead>
+                        <tr>
+                            <th scope="col">Pacote</th>
+                            <th scope="col">Destino</th>
+                            <th scope="col">Preço por Pessoa</th>
+                            <th scope="col">Duração</th>
+                            <th scope="col">Inclusões</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Pacote Dupla</th>
+                            <td>Rio de Janeiro</td>
+                            <td>R$ 2.500,00</td>
+                            <td>7 dias / 6 noites</td>
+                            <td>Passeios guiados, hotel 4 estrelas, café da manhã</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pacote Solo</th>
+                            <td>Florianópolis</td>
+                            <td>R$ 3.200,00</td>
+                            <td>5 dias / 4 noites</td>
+                            <td>Passeios de barco, pousada à beira-mar, todas as refeições</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pacote Família</th>
+                            <td>Gramado</td>
+                            <td>R$ 2.800,00</td>
+                            <td>4 dias / 3 noites</td>
+                            <td>Entradas para parques temáticos, hotel com piscina aquecida</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pacote Luxo</th>
+                            <td>Jalapão</td>
+                            <td>R$ 3.500,00</td>
+                            <td>8 dias / 7 noites</td>
+                            <td>Safari no deserto, acampamento em tendas luxuosas, todas as refeições incluídas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 

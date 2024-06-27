@@ -21,12 +21,20 @@
       margin: auto;
       padding: 1rem;
       background-color: #B2BEBF;
-      /* Cor de fundo do container */
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-top: 50px;
-      /* Espaço superior para separar do topo */
+      margin-top: 200px;
       margin-bottom: 50px;
+    }
+
+    a {
+      background-color: #2D4B73;
+      margin-top: 50px;
+      padding: 10px 100px;
+      border-radius: 5px;
+
+      color: white;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -39,11 +47,11 @@
       <h1 class="h5 mb-4 fw-normal">Entre no Nosso Site</h1>
 
       <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
         <label for="floatingInput">Email</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" required>
         <label for="floatingPassword">Senha</label>
       </div>
 
@@ -52,7 +60,7 @@
           <input type="checkbox" value="remember-me"> Lembre de mim
         </label>
       </div>
-      <a href="index.html"><button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button></a>
+      <a href="index.html">Entrar</a>
       <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
     </form>
   </main>
